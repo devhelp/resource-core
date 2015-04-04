@@ -1,0 +1,25 @@
+{
+    "name": "devhelp/resource-core",
+    "description": "abstraction over resource that can read content of itself",
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit":  "~4",
+        "mockery/mockery": "~0",
+        "squizlabs/php_codesniffer": "~2"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devhelp\\Resource\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devhelp\\Resource\\": "tests"
+        }
+    }
+}
