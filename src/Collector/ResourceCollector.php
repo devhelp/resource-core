@@ -3,6 +3,7 @@
 namespace Devhelp\Resource\Collector;
 
 use Devhelp\Resource\Iterator\ResourceIterator;
+use Devhelp\Resource\Type\Resource;
 
 class ResourceCollector
 {
@@ -17,6 +18,10 @@ class ResourceCollector
         $this->iterator = $iterator;
     }
 
+    /**
+     * @param $limit
+     * @return Resource[]
+     */
     public function collect($limit = -1)
     {
         $resources = array();
